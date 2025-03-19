@@ -1,0 +1,22 @@
+Analisis Hasil:
+1.	Akurasi Deteksi Pose dengan YOLOv8
+YOLOv8 memiliki akurasi tinggi dan kecepatan inferensi cepat, cocok untuk real-time. Namun, performanya tergantung pada kualitas dataset dan kompleksitas pose.
+2.	Kinerja dalam Kondisi Pencahayaan Rendah
+Akurasi menurun dalam pencahayaan rendah, terutama jika kontras rendah. Preprocessing gambar dan augmentasi data dapat membantu meningkatkan performa.
+3.	Perbandingan dengan MediaPipe dan OpenPose
+•	MediaPipe: Cepat, ringan, tetapi kurang akurat.
+•	OpenPose: Akurat tetapi lebih lambat.
+•	YOLOv8: Seimbang dalam kecepatan dan akurasi, ideal untuk real-time.
+
+Diskusi:
+1.	Penerapan dalam Robotika dan Industri
+Digunakan untuk interaksi robot, pemantauan pekerja, dan rehabilitasi medis.
+2.	Tantangan Deteksi Pose Real-Time
+•	Latensi dan kecepatan inferensi.
+•	Variasi pose dan sudut pandang.
+•	Gangguan dari lingkungan seperti occlusion dan pencahayaan buruk.
+3.	Meningkatkan Akurasi Deteksi Pose
+•	Augmentasi Data: Variasi pencahayaan dan sudut kamera.
+•	Fine-Tuning Model: Transfer learning dengan dataset spesifik.
+•	Optimasi Parameter: Adjust threshold confidence dan NMS.
+•	Multi-Modal Learning: Kombinasi dengan depth camera atau IMU.
